@@ -21,7 +21,6 @@
 <meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link
@@ -73,12 +72,12 @@ body{
   cursor:pointer;
 }
 
-/* ENTIRE PAGE CLICKABLE */
+/* FULL PAGE CLICKABLE */
 
 .page-link{
   position:fixed;
   inset:0;
-  z-index:1;
+  z-index:9999;
 }
 
 /* BACKGROUND */
@@ -135,7 +134,7 @@ header{
   top:0;
   left:0;
   right:0;
-  z-index:10;
+  z-index:100;
 
   display:flex;
   align-items:center;
@@ -155,7 +154,6 @@ header{
   font-weight:800;
   font-size:22px;
   color:var(--gold);
-  text-decoration:none;
 }
 
 .nav-cta{
@@ -168,14 +166,6 @@ header{
   border-radius:50px;
 
   padding:10px 22px;
-
-  text-decoration:none;
-
-  transition:0.3s;
-}
-
-.nav-cta:hover{
-  transform:translateY(-2px);
 }
 
 /* MAIN */
@@ -316,8 +306,6 @@ h1{
   font-size:18px;
   font-weight:700;
 
-  text-decoration:none;
-
   margin-bottom:50px;
 
   transition:0.3s;
@@ -434,9 +422,6 @@ h1{
 /* FOOTER */
 
 footer{
-  position:relative;
-  z-index:10;
-
   text-align:center;
   padding:24px;
   border-top:1px solid var(--border);
@@ -485,12 +470,11 @@ footer{
 <body>
 
 <!-- ENTIRE PAGE CLICKABLE -->
-
 <a
 href="https://www.fqindia.com/#/register?invitationCode=177271716"
-class="page-link"
 target="_blank"
-rel="noopener noreferrer">
+class="page-link"
+aria-label="Register Now">
 </a>
 
 <div class="bg-ambient">
@@ -544,12 +528,12 @@ Invitation Code
 </div>
 
 <div class="code-value">
-91CLUB
+177271716
 </div>
 </div>
 
 <div class="code-copy">
-Tap Anywhere ↗
+Tap Anywhere To Continue ↗
 </div>
 
 </div>
@@ -626,13 +610,13 @@ secure access, and member-exclusive benefits for new users.
 <h3>How to register on 91 Club?</h3>
 
 <p>
-Simply tap anywhere on the page to open the official registration portal instantly.
+Click anywhere on this page to continue to the official registration page.
 </p>
 
 <h3>What is the official invitation code for 91 Club?</h3>
 
 <p>
-The official invitation code is 91CLUB.
+The official invitation code is 177271716.
 </p>
 
 <h3>How long does registration take?</h3>
