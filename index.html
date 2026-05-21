@@ -5,7 +5,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- PRIMARY SEO -->
 <title>91 Club Official Login & Registration | 91LoginClub</title>
 
 <meta name="description" content="91 Club official login and registration platform. Register now using the official invitation code and access exclusive rewards instantly.">
@@ -16,13 +15,10 @@
 
 <link rel="canonical" href="https://91loginclub.com/">
 
-<!-- OPEN GRAPH -->
 <meta property="og:title" content="91 Club Official Login">
 <meta property="og:description" content="Register on 91 Club using the official invitation link and invitation code.">
 <meta property="og:url" content="https://91loginclub.com/">
 <meta property="og:type" content="website">
-
-<!-- PERFORMANCE OPTIMIZED GOOGLE FONTS -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -30,31 +26,7 @@
 
 <link
 href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
-rel="stylesheet"
-media="print"
-onload="this.onload=null;this.media='all'">
-
-<noscript>
-<link
-href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
 rel="stylesheet">
-</noscript>
-
-<!-- STRUCTURED DATA -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "91LoginClub",
-  "url": "https://91loginclub.com/",
-  "description": "91 Club official login and registration platform.",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://91loginclub.com/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
 
 <style>
 
@@ -98,6 +70,15 @@ body{
   min-height:100vh;
   overflow-x:hidden;
   -webkit-font-smoothing:antialiased;
+  cursor:pointer;
+}
+
+/* ENTIRE PAGE CLICKABLE */
+
+.page-link{
+  position:fixed;
+  inset:0;
+  z-index:1;
 }
 
 /* BACKGROUND */
@@ -154,7 +135,7 @@ header{
   top:0;
   left:0;
   right:0;
-  z-index:100;
+  z-index:10;
 
   display:flex;
   align-items:center;
@@ -292,8 +273,6 @@ h1{
   padding:16px 26px;
 
   margin-bottom:36px;
-
-  cursor:pointer;
 
   transition:0.3s;
 }
@@ -455,6 +434,9 @@ h1{
 /* FOOTER */
 
 footer{
+  position:relative;
+  z-index:10;
+
   text-align:center;
   padding:24px;
   border-top:1px solid var(--border);
@@ -502,6 +484,15 @@ footer{
 
 <body>
 
+<!-- ENTIRE PAGE CLICKABLE -->
+
+<a
+href="https://www.fqindia.com/#/register?invitationCode=177271716"
+class="page-link"
+target="_blank"
+rel="noopener noreferrer">
+</a>
+
 <div class="bg-ambient">
   <div class="orb orb-1"></div>
   <div class="orb orb-2"></div>
@@ -511,17 +502,13 @@ footer{
 
 <header>
 
-<a href="https://www.fqIndia.com/#/register?invitationCode=177271716"
-class="logo">
+<div class="logo">
 91 Club
-</a>
+</div>
 
-<a href="https://www.fqIndia.com/#/register?invitationCode=177271716"
-class="nav-cta"
-target="_blank"
-rel="noopener noreferrer">
+<div class="nav-cta">
 Register Now
-</a>
+</div>
 
 </header>
 
@@ -549,30 +536,27 @@ Join 91 Club using the official invitation code and access fast registration,
 secure onboarding, and exclusive member rewards instantly.
 </p>
 
-<div class="code-card" onclick="copyCode()">
+<div class="code-card">
 
 <div>
 <div class="code-label">
 Invitation Code
 </div>
 
-<div class="code-value" id="inv-code">
+<div class="code-value">
 91CLUB
 </div>
 </div>
 
-<div class="code-copy" id="copy-label">
-Tap to copy ↗
+<div class="code-copy">
+Tap Anywhere ↗
 </div>
 
 </div>
 
-<a href="https://www.fqIndia.com/#/register?invitationCode=177271716"
-class="cta-btn"
-target="_blank"
-rel="noopener noreferrer">
+<div class="cta-btn">
 Register Now →
-</a>
+</div>
 
 <div class="trust-row">
 
@@ -642,7 +626,7 @@ secure access, and member-exclusive benefits for new users.
 <h3>How to register on 91 Club?</h3>
 
 <p>
-Click on the official registration button and complete the signup process using the invitation code.
+Simply tap anywhere on the page to open the official registration portal instantly.
 </p>
 
 <h3>What is the official invitation code for 91 Club?</h3>
@@ -666,26 +650,6 @@ Registration usually takes less than 60 seconds.
 <footer>
 © 2026 91 Club · 18+ Only · Play Responsibly
 </footer>
-
-<script defer>
-
-function copyCode(){
-
-const code=document.getElementById('inv-code').textContent;
-
-navigator.clipboard.writeText(code);
-
-const label=document.getElementById('copy-label');
-
-label.innerHTML='✓ Copied!';
-
-setTimeout(()=>{
-label.innerHTML='Tap to copy ↗';
-},2000);
-
-}
-
-</script>
 
 </body>
 </html>
